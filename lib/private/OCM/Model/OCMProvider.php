@@ -232,7 +232,7 @@ class OCMProvider implements IOCMProvider {
 
 		return [
 			'enabled' => $this->isEnabled(),
-			'apiVersion' => $this->getApiVersion(),  // informative and real version
+			'apiVersion' => '1.0-proposal1',  // Does not reflect reality, but must be kept untill Nextcloud 28 is no longer a concern.
 			'endPoint' => $this->getEndPoint(),
 			'publicKey' => $this->getSignatory()?->jsonSerialize(),
 			'resourceTypes' => $resourceTypes
